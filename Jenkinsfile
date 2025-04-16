@@ -3,7 +3,7 @@ agent any
 stages {
   stage('SCM code') {
    steps {
-    git 'https://github.com/hellokaton/java11-examples.git'
+    git 'hhttps://github.com/kkagg/java11-examples.git'
    }
   }
  stage('Build') {
