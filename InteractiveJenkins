@@ -14,4 +14,9 @@ stage('Archive build output') {
 // Archive the build output artifacts.
     archiveArtifacts artifacts: 'output/*.txt', excludes: 'output/*.md'
   }
+
+stage('Approval') {
+//Wait for Approval
+    input 'Do you want to Proceed'
+}
 }
